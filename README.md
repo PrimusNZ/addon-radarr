@@ -1,4 +1,4 @@
-# Hassio Add-ons by petersendev: Radarr
+# Hassio Add-ons by PrimusNZ: Radarr
 
 ## About
 

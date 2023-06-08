@@ -13,9 +13,9 @@ RUN curl -J -L -o /tmp/bashio.tar.gz \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio \
     && rm -fr /tmp/* 
 
-# use /data instead of /config for hass.io environment
-RUN sed -i "s|/config|/config/radarr|g" /etc/s6-overlay/s6-rc.d/init-radarr-config/run \
-    && sed -i "s|/config|/config/radarr|g" /etc/s6-overlay/s6-rc.d/svc-radarr/run
+# use /share/radarr/config instead of /config for hass.io environment
+RUN sed -i "s|/config|/share/radarr/config|g" /etc/s6-overlay/s6-rc.d/init-radarr-config/run \
+    && sed -i "s|/config|/share/radarr/config|g" /etc/s6-overlay/s6-rc.d/svc-radarr/run
 
 # copy local files
 COPY root/ /
