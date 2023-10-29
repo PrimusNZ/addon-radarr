@@ -6,10 +6,10 @@ if [ ! -d /media/Movies ]; then
   chown -R abc:abc /media/Movies
 fi
 
-if [ ! -d /media/Downloads ]; then
-  echo "Creating /media/Downloads"
-  mkdir -p /media/Downloads
-  chown -R abc:abc /media/Downloads
+if [ ! -d /share/downloads ]; then
+  echo "Creating /share/downloads"
+  mkdir -p /share/downloads
+  chown -R abc:abc /share/downloads
 fi
 
 if [ ! -d /share/radarr/config ]; then
